@@ -4,7 +4,6 @@ A Generative AI powered **Question-Answering**, **Data Analytics** system that a
 
 Get **text** or **Chart** responses depending upon the query. The chat history is maintained, ensuring smooth and engaging experience.
 
----
 
 ## **🚀 Features**
 
@@ -14,11 +13,11 @@ Get **text** or **Chart** responses depending upon the query. The chat history i
 ✅ **Dynamic Chat History** (Newest messages appear at the top)  
 ✅ **Visually Appealing UI** (Chat bubbles for a better experience)
 
----
 
-<img src="https://github.com/user-attachments/assets/7cb98fe4-0cc0-4fdc-86d9-75c4cd1befe9" width="600"/>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/0fa40982-9b4f-4006-86ad-b4c26187adf9" width="700"/>
+</div>
 
----
 
 ## **📦 Installation**
 
@@ -65,7 +64,6 @@ streamlit run app.py
 - **📉 Plotly** (For generating visualizations)
 - **📢 Streamlit** (Frontend and UI)
 
----
 
 ## **🌟 How It Works**
 
@@ -74,7 +72,6 @@ streamlit run app.py
 3. **Get instant responses** (Text-based summaries or Plotly charts)
 4. **All queries & responses are stored in chat history**
 
----
 
 <!--
 ## **📝 To-Do / Future Enhancements**
@@ -89,13 +86,11 @@ streamlit run app.py
 
 Contributions are welcome! Feel free to submit an issue or a pull request.
 
----
 
 ## **📜 License**
 
 This project is licensed under the **MIT License**.
 
----
 
 ### **💡 Need Help?**
 
