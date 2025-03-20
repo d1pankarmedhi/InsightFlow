@@ -4,15 +4,11 @@ A Generative AI powered **Question-Answering**, **Data Analytics** system that a
 
 Get **text** or **Chart** responses depending upon the query. The chat history is maintained, ensuring smooth and engaging experience.
 
-
 ## **🚀 Features**
 
 ✅ **Upload CSV/Excel Files** (Supports sheet selection for Excel)  
-✅ **Interactive Chat Interface** (User queries on the right, AI responses on the left)  
 ✅ **Text-Based and Chart Responses** (Automatically detects whether to return text or a Plotly chart)  
-✅ **Dynamic Chat History** (Newest messages appear at the top)  
 ✅ **Visually Appealing UI** (Chat bubbles for a better experience)
-
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/0fa40982-9b4f-4006-86ad-b4c26187adf9" width="700"/>
@@ -28,7 +24,14 @@ git clone https://github.com/d1pankarmedhi/InsightFlow.git
 cd InsightFlow
 ```
 
-2️⃣ **Create a virtual environment**
+2️⃣ **Setup the environment variables**
+
+```bash
+# .env
+GEMINI_API_KEY=gemini-api-key
+```
+
+3️⃣ **Create a virtual environment for Backend**
 
 ```bash
 python -m venv venv
@@ -36,34 +39,21 @@ source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate     # On Windows
 ```
 
-3️⃣ **Install dependencies**
+4️⃣ **Install dependencies and start the Backend**
 
 ```bash
+cd backend
 pip install -r requirements.txt
+python main.py
 ```
 
-4️⃣ **Setup the environment variables**
+5️⃣ **Start frontend**
 
 ```bash
-# .env
-GEMINI_API_KEY=gemini-api-key
+cd frontend
+npm i --verbose
+npm run dev
 ```
-
-5️⃣ **Run the Streamlit App**
-
-```bash
-streamlit run app.py
-```
-
----
-
-## **🛠 Project Info**
-
-- **🧠 LLM**: Gemini-1.5-Flash
-- **📊 Pandas** (Data processing)
-- **📉 Plotly** (For generating visualizations)
-- **📢 Streamlit** (Frontend and UI)
-
 
 ## **🌟 How It Works**
 
@@ -71,7 +61,6 @@ streamlit run app.py
 2. **Ask questions about your data** (e.g., "Show a chart of sales trends")
 3. **Get instant responses** (Text-based summaries or Plotly charts)
 4. **All queries & responses are stored in chat history**
-
 
 <!--
 ## **📝 To-Do / Future Enhancements**
@@ -86,11 +75,9 @@ streamlit run app.py
 
 Contributions are welcome! Feel free to submit an issue or a pull request.
 
-
 ## **📜 License**
 
 This project is licensed under the **MIT License**.
-
 
 ### **💡 Need Help?**
 
