@@ -16,7 +16,7 @@ app = FastAPI(title="InsightGen API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React Vite default port
+    allow_origins=["http://localhost:5173"],  # frontend port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -36,12 +36,8 @@ async def root():
 @app.post("/api/insight")
 async def get_insight(request: InsightRequest):
     try:
-        # Convert the data to a pandas DataFrame
         df = pd.DataFrame(request.data)
-
-        # Get the code response from the router
         code_response = answer(df, request.query)
-        # Create a namespace for execution
         namespace = {
             "df": df,
             "px": px,
@@ -56,7 +52,6 @@ async def get_insight(request: InsightRequest):
 
         printed_output = output_buffer.getvalue().strip()
 
-        # If the code contains 'fig', it's a chart response
         if "fig" in code_response:
             fig = namespace.get("fig")
             print("figure", fig.to_json())
@@ -65,7 +60,6 @@ async def get_insight(request: InsightRequest):
             else:
                 raise HTTPException(status_code=400, detail="Chart generation failed")
 
-        # For text responses, return the captured output
         return {
             "type": "text",
             "data": printed_output if printed_output else "No output generated",
