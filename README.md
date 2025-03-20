@@ -56,13 +56,6 @@ npm i --verbose
 npm run dev
 ```
 
-## **🛠 Project Info**
-
-- **🧠 LLM**: Gemini-1.5-Flash
-- **📊 Pandas** (Data processing)
-- **📉 Plotly** (For generating visualizations)
-- **📢 Streamlit** (Frontend and UI)
-
 ## **🌟 How It Works**
 
 1. **Upload a CSV or Excel file**
