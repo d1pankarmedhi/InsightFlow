@@ -7,9 +7,7 @@ Get **text** or **Chart** responses depending upon the query. The chat history i
 ## **🚀 Features**
 
 ✅ **Upload CSV/Excel Files** (Supports sheet selection for Excel)  
-✅ **Interactive Chat Interface** (User queries on the right, AI responses on the left)  
 ✅ **Text-Based and Chart Responses** (Automatically detects whether to return text or a Plotly chart)  
-✅ **Dynamic Chat History** (Newest messages appear at the top)  
 ✅ **Visually Appealing UI** (Chat bubbles for a better experience)
 
 <div align="center">
