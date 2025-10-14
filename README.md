@@ -14,6 +14,7 @@ Get **text** or **Chart** responses depending upon the query. The chat history i
 <img src="https://github.com/user-attachments/assets/0fa40982-9b4f-4006-86ad-b4c26187adf9" width="700"/>
 </div>
 
+
 ## **📦 Installation**
 
 1️⃣ **Clone the repository**
