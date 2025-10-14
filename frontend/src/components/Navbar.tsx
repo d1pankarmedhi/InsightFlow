@@ -11,13 +11,13 @@ export function Navbar({ isDarkMode, onThemeToggle }: NavbarProps) {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <a href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold text-xl">InsightGen</span>
+            <span className="font-bold text-xl">InsightFlow</span>
           </a>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="flex items-center space-x-2">
             <a
-              href="https://github.com/yourusername/insightgen"
+              href="https://github.com/d1pankarmedhi/InsightFlow"
               target="_blank"
               rel="noreferrer"
               className="p-2 hover:bg-muted rounded-lg transition-colors"
